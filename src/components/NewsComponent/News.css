@@ -1,0 +1,141 @@
+.grid
+{
+    width: 100%;
+    padding: 100px 0 50px 0;
+}
+.left-align
+{
+    width: 75%;
+    float: left;
+}
+.right-align
+{
+    width: 24%;
+    margin-right: 10px;
+    float: right;
+}
+.daily_news_col
+{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+}
+.card
+{
+    width: 350px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0 3px 5px 2px rgba(57, 63, 72, 0.3);
+}
+.image
+{
+    width: 350px;
+    height: 150px;
+    cursor: pointer;
+    border-radius: 10px 10px 0 0;
+}
+.image:hover{
+    opacity: 0.9;
+}
+.content
+{
+    padding: 15px;
+}
+.content h2{
+    font-size: 18px;
+    line-height: 1.5em;
+    height: 1.5em;       
+    overflow: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(31, 30, 30);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.content p{
+    font-size: 14px;
+    color: rgb(59, 59, 59);
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5em;
+    height: 3em;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    width: 100%; 
+}
+a
+{
+    text-decoration: none;
+}
+.headline-title
+{
+    font-size: 17px;
+    cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+    color:rgb(115, 173, 248);
+    line-height: 1.5em;
+    height: 1.5em; 
+    text-decoration: none;
+    font-weight: 500;      
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.headline-title:hover{
+    color: rgb(77, 77, 255);
+}
+.headline-desc{
+    font-size: 14px;
+    margin-top: -10px;
+    letter-spacing: 0.01em;
+    color: rgba(0, 0, 0, 0.651);
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5em;
+    height: 3em;      
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.solid
+{
+    border-top: 1px solid rgb(221, 214, 214);
+}
+.text-deco
+{
+  text-decoration: none;
+}
+/*Media query for mobile device*/
+@media(max-width:768px)
+{
+    .left-align
+    {
+        width: 100%;
+        clear: left;
+    }
+    .right-align
+    {   
+        width: 100%;
+        clear: right;
+    }
+    .headline_news_col
+    {
+        padding: 5px 30px;
+    }
+    .daily_news_col
+    { 
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    justify-content: center;  
+    }
+    .card
+    {
+    width: 280px;
+    }
+.image
+    {
+    width: 280px;
+    height: 110px;
+    }
+}
