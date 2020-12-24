@@ -1,0 +1,17 @@
+.card
+{
+    background-color: rgba(255, 255, 255, 0.911);
+    margin: 5px;
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+}
+@media (max-width :768px)
+{
+    .card
+    {
+        height: auto;
+        width: 500px;
+        border-radius: 5px;
+    }
+}
